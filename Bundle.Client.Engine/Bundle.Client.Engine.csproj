@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <LangVersion>10.0</LangVersion>
+	  <ImplicitUsings>false</ImplicitUsings>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageVersion>0.2.2-alpha</PackageVersion>
+	  <VersionPrefix>0.2.2-alpha</VersionPrefix>
+	  <Authors>D5</Authors>
+	  <Company>Bundle</Company>
+	  <Description>Open engine for creating advanced clients Minecraft</Description>
+	  <Copyright>MIT</Copyright>
+	  <PackageProjectUrl>https://github.com/MC-Bundle</PackageProjectUrl>
+	  <PackageIcon>logo.png</PackageIcon>
+	  <RepositoryUrl>https://github.com/MC-Bundle/BundleClientEngine.git</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageTags>bundle;minecraft;майнкрафт;</PackageTags>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bundle.Runtime" Version="0.2.2-alpha" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<None Include="logo.png" Pack="true" PackagePath="/" />
+	</ItemGroup>
+</Project>
